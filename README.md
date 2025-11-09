@@ -90,12 +90,10 @@ bash
 Copy code
 streamlit run app/app.py
 
-
-| Step                | Description                                         | Output                  |
-| ------------------- | --------------------------------------------------- | ----------------------- |
-| **Data Conversion** | Converts scraped JSON → CSV                         | `processed_reviews.csv` |
-| **Analysis**        | Performs POS, NER, TF-IDF, Word2Vec, Sentiment, LSA | `phase2_output.csv`     |
-| **Summarization**   | Clusters reviews & extracts key feedback            | `phase3_summary.json`   |
-| **Q&A Generation**  | Creates automatic Q&A pairs from insights           | `phase3_qa.csv`         |
-| **Dashboard**       | Interactive visualization & question answering      | Web App                 |
-
+🧠 Workflow Overview
+Step	Description	Output
+Data Conversion	Converts scraped JSON → CSV	processed_reviews.csv
+Analysis	Performs POS, NER, TF-IDF, Word2Vec, Sentiment, LSA	phase2_output.csv
+Summarization	Clusters reviews & extracts key feedback	phase3_summary.json
+Q&A Generation	Creates automatic Q&A pairs from insights	phase3_qa.csv
+Dashboard	Interactive visualization & question answering	Web App
