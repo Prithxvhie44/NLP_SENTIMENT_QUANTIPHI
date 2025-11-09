@@ -133,21 +133,24 @@ Top Negative Keywords	rubber, sound, price, filling
 🧮 Visualizations
 
 Sentiment Distribution Donut Chart
-
 Top Positive & Negative Keywords (Bar Chart)
-
 Word Cloud by Sentiment
-
 t-SNE Semantic Clusters
-
 Auto-generated Review Summaries
 
 📸 Dashboard Preview
-Section	Screenshot
+
+
 Dashboard Overview	
+<img width="1878" height="610" alt="image" src="https://github.com/user-attachments/assets/5fec6ae0-00f9-47c0-a3f6-df512db52adf" />
+
 
 Sentiment Donut Chart	
+<img width="587" height="586" alt="image" src="https://github.com/user-attachments/assets/a28c5980-5703-49ef-9337-17293f259fe5" />
 
 Word Cloud	
 
+
 Cluster Visualization	
+<img width="1125" height="798" alt="image" src="https://github.com/user-attachments/assets/9c59a2a7-f559-4d86-a599-2acb9d1555b3" />
+
