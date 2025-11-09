@@ -145,6 +145,7 @@ Q&A pairs → phase3_qa.csv
 To execute all steps at once, create and run a pipeline script:
 
 python scripts/run_pipeline.py
+```
 
 🧠 Workflow Overview
 
