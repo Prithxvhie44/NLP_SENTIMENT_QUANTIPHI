@@ -66,20 +66,28 @@ NLP_SENTIMENT_QUANTIPHI/
 
 ---
 
+---
+
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the repository
 ```bash
 git clone https://github.com/Prithxvhie44/NLP_SENTIMENT_QUANTIPHI.git
 cd NLP_SENTIMENT_QUANTIPHI
-
+2️⃣ Create and activate virtual environment
+bash
+Copy code
 python -m venv nlp_env
 nlp_env\Scripts\activate     # Windows
 source nlp_env/bin/activate  # macOS/Linux
-
+3️⃣ Install dependencies
+bash
+Copy code
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
-
+4️⃣ Run the Streamlit Dashboard
+bash
+Copy code
 streamlit run app/app.py
 
 
