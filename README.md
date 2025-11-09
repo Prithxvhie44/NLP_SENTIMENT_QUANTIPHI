@@ -70,30 +70,23 @@ NLP_SENTIMENT_QUANTIPHI/
 
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the repository
 
+---
+
+## ⚙️ Installation & Setup
+
+
+```bash
+1️⃣ Clone the repository
 git clone https://github.com/Prithxvhie44/NLP_SENTIMENT_QUANTIPHI.git
 cd NLP_SENTIMENT_QUANTIPHI
-###2️⃣ Create and activate virtual environment
-bash
-Copy code
+2️⃣ Create and activate a virtual environment
 python -m venv nlp_env
 nlp_env\Scripts\activate     # Windows
 source nlp_env/bin/activate  # macOS/Linux
 3️⃣ Install dependencies
-bash
-Copy code
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
-4️⃣ Run the Streamlit Dashboard
-bash
-Copy code
-streamlit run app/app.py
 
-🧠 Workflow Overview
-Step	Description	Output
-Data Conversion	Converts scraped JSON → CSV	processed_reviews.csv
-Analysis	Performs POS, NER, TF-IDF, Word2Vec, Sentiment, LSA	phase2_output.csv
-Summarization	Clusters reviews & extracts key feedback	phase3_summary.json
-Q&A Generation	Creates automatic Q&A pairs from insights	phase3_qa.csv
-Dashboard	Interactive visualization & question answering	Web App
+4️⃣ Run the Streamlit Dashboard
+streamlit run app/app.py
