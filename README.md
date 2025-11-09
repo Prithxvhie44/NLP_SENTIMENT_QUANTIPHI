@@ -150,6 +150,11 @@ Sentiment Donut Chart
 
 Word Cloud	
 
+<img width="837" height="588" alt="image" src="https://github.com/user-attachments/assets/81b962de-f26d-406c-852f-67dc60d2c53e" />
+<img width="809" height="588" alt="image" src="https://github.com/user-attachments/assets/50fdfb1b-a04c-485e-9a61-fef7fd279ef0" />
+
+
+
 
 Cluster Visualization	
 <img width="1125" height="798" alt="image" src="https://github.com/user-attachments/assets/9c59a2a7-f559-4d86-a599-2acb9d1555b3" />
