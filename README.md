@@ -71,10 +71,10 @@ NLP_SENTIMENT_QUANTIPHI/
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the repository
-```bash
+
 git clone https://github.com/Prithxvhie44/NLP_SENTIMENT_QUANTIPHI.git
 cd NLP_SENTIMENT_QUANTIPHI
-2️⃣ Create and activate virtual environment
+###2️⃣ Create and activate virtual environment
 bash
 Copy code
 python -m venv nlp_env
