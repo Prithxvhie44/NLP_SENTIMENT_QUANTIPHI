@@ -64,11 +64,6 @@ NLP_SENTIMENT_QUANTIPHI/
 └── .gitignore # Ignored cache/checkpoints
 
 
----
-
----
-
-## ⚙️ Installation & Setup
 
 
 ---
@@ -90,3 +85,15 @@ python -m spacy download en_core_web_sm
 
 4️⃣ Run the Streamlit Dashboard
 streamlit run app/app.py
+---
+```
+
+
+| Step                | Description                                         | Output                  |
+| ------------------- | --------------------------------------------------- | ----------------------- |
+| **Data Conversion** | Converts scraped JSON → CSV                         | `processed_reviews.csv` |
+| **Analysis**        | Performs POS, NER, TF-IDF, Word2Vec, Sentiment, LSA | `phase2_output.csv`     |
+| **Summarization**   | Clusters reviews & extracts key feedback            | `phase3_summary.json`   |
+| **Q&A Generation**  | Creates automatic Q&A pairs from insights           | `phase3_qa.csv`         |
+| **Dashboard**       | Interactive visualization & question answering      | Web App                 |
+
