@@ -14,7 +14,7 @@ st.set_page_config(page_title="Customer Sentiment Q&A", page_icon="🧠", layout
 # ---------------------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("phase2_output.csv")
+    df = pd.read_csv("data\processed\phase2_output.csv")
     if 'cleaned_text' not in df.columns:
         st.error("❌ 'cleaned_text' column not found! Please use Phase 2 output.")
         st.stop()
@@ -77,36 +77,36 @@ if user_query:
 # ---------------------------
 # 📉 Negative Feedback Highlights (Enhanced)
 # ---------------------------
-import re
-from collections import Counter
+# import re
+# from collections import Counter
 
-st.subheader("📉 Negative Feedback Highlights")
+# st.subheader("📉 Negative Feedback Highlights")
 
-if 'sentiment_label' not in df.columns:
-    st.warning("No sentiment labels found — please run Phase 2 first.")
-else:
-    neg_df = df[df['sentiment_label'] == 'Negative']
+# if 'sentiment_label' not in df.columns:
+#     st.warning("No sentiment labels found — please run Phase 2 first.")
+# else:
+#     neg_df = df[df['sentiment_label'] == 'Negative']
 
-    if neg_df.empty:
-        st.info("🎉 No negative feedback found — customers are mostly satisfied!")
-    else:
-        # Clean repetitive or short reviews
-        neg_df['cleaned_text'] = neg_df['cleaned_text'].apply(
-            lambda x: re.sub(r'\s+', ' ', str(x)).strip().lower()
-        )
-        neg_df.drop_duplicates(subset=['cleaned_text'], inplace=True)
+#     if neg_df.empty:
+#         st.info("🎉 No negative feedback found — customers are mostly satisfied!")
+#     else:
+#         # Clean repetitive or short reviews
+#         neg_df['cleaned_text'] = neg_df['cleaned_text'].apply(
+#             lambda x: re.sub(r'\s+', ' ', str(x)).strip().lower()
+#         )
+#         neg_df.drop_duplicates(subset=['cleaned_text'], inplace=True)
 
-        st.write(f"Found {len(neg_df)} unique negative reviews. Here are a few examples:")
-        for i, row in enumerate(neg_df.head(5).itertuples(), 1):
-            st.markdown(f"**{i}.** {row.cleaned_text.capitalize()}")
-            st.write("---")
+#         st.write(f"Found {len(neg_df)} unique negative reviews. Here are a few examples:")
+#         for i, row in enumerate(neg_df.head(5).itertuples(), 1):
+#             st.markdown(f"**{i}.** {row.cleaned_text.capitalize()}")
+#             st.write("---")
 
-        # Quick keyword summary
-        all_words = " ".join(neg_df['cleaned_text']).split()
-        common_words = Counter([w for w in all_words if len(w) > 3]).most_common(5)
-        keywords = ", ".join([w for w, _ in common_words])
+#         # Quick keyword summary
+#         all_words = " ".join(neg_df['cleaned_text']).split()
+#         common_words = Counter([w for w in all_words if len(w) > 3]).most_common(5)
+#         keywords = ", ".join([w for w, _ in common_words])
 
-        st.success(f"🔎 Common issues reported: **{keywords}**")
+#         st.success(f"🔎 Common issues reported: **{keywords}**")
 
 
 # ============================================
