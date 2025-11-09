@@ -83,10 +83,68 @@ source nlp_env/bin/activate  # macOS/Linux
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
 
-4️⃣ Run the Streamlit Dashboard
+🔄 Execution Workflow
+
+Before running the Streamlit dashboard, all data-processing scripts must be executed once to generate the required output files.
+
+Step 1 — Data Conversion
+
+Convert scraped Flipkart review data from JSON → CSV.
+
+python scripts/conversion.py
+
+
+Input: data/raw/reviews.json
+Output: data/processed/processed_reviews.csv
+
+Step 2 — NLP Analysis
+
+Perform POS tagging, TF-IDF, Word2Vec, Sentiment (VADER), and LSA topic modeling.
+
+python scripts/phase2_analysis.py
+
+
+Input: data/processed/processed_reviews.csv
+Output: data/processed/phase2_output.csv
+Also generates:
+
+models/word2vec.model
+
+models/tfidf_vectorizer.joblib
+
+Step 3 — Review Summarization & Q&A Generation
+
+Cluster reviews, create representative summaries, and auto-generate Q&A pairs.
+
+python scripts/phase3_summary_qa.py
+
+
+Input: data/processed/phase2_output.csv
+Output:
+
+data/processed/phase3_summary.json
+
+data/processed/phase3_qa.csv
+
+Step 4 — Launch the Dashboard
+
+After all the above outputs are generated, start the interactive dashboard:
+
 streamlit run app/app.py
----
-```
+
+The app will automatically load:
+
+Sentiment data → phase2_output.csv
+
+Summaries → phase3_summary.json
+
+Q&A pairs → phase3_qa.csv
+
+🪄 (Optional) Run Entire Pipeline Automatically
+
+To execute all steps at once, create and run a pipeline script:
+
+python scripts/run_pipeline.py
 
 🧠 Workflow Overview
 
