@@ -92,18 +92,12 @@ Step 1 — Data Conversion
 Convert scraped Flipkart review data from JSON → CSV.
 
 python scripts/conversion.py
-
-
 Input: data/raw/reviews.json
 Output: data/processed/processed_reviews.csv
 
 Step 2 — NLP Analysis
-
 Perform POS tagging, TF-IDF, Word2Vec, Sentiment (VADER), and LSA topic modeling.
-
 python scripts/phase2_analysis.py
-
-
 Input: data/processed/processed_reviews.csv
 Output: data/processed/phase2_output.csv
 Also generates:
@@ -121,15 +115,11 @@ python scripts/phase3_summary_qa.py
 
 Input: data/processed/phase2_output.csv
 Output:
-
 data/processed/phase3_summary.json
-
 data/processed/phase3_qa.csv
 
 Step 4 — Launch the Dashboard
-
 After all the above outputs are generated, start the interactive dashboard:
-
 streamlit run app/app.py
 
 The app will automatically load:
@@ -145,6 +135,14 @@ Q&A pairs → phase3_qa.csv
 To execute all steps at once, create and run a pipeline script:
 
 python scripts/run_pipeline.py
+
+Include a workflow table:
+
+Step	Description	Output
+1	Data Conversion	processed_reviews.csv
+2	NLP Analysis	phase2_output.csv
+3	Summarization	phase3_summary.json
+4	Dashboard	Interactive Web App
 ```
 
 🧠 Workflow Overview
@@ -213,8 +211,41 @@ Word Cloud
 <img width="809" height="588" alt="image" src="https://github.com/user-attachments/assets/50fdfb1b-a04c-485e-9a61-fef7fd279ef0" />
 
 
-
-
 Cluster Visualization	
 <img width="1125" height="798" alt="image" src="https://github.com/user-attachments/assets/9c59a2a7-f559-4d86-a599-2acb9d1555b3" />
+
+
+Demonstrates forward thinking.
+
+Multilingual translation (Hindi → English)(As dataset right now didnt have any hindi comments)
+
+Automated periodic scraping
+
+Deployment on Streamlit Cloud
+
+Advanced sentiment models (Naive Bayes / LightGBM)
+
+References
+
+Always add these for academic projects.
+
+Bird et al. — Natural Language Toolkit (NLTK)
+
+Pedregosa et al. — Scikit-learn
+
+Řehůřek & Sojka — Gensim
+
+Hutto & Gilbert — VADER Sentiment
+
+spaCy Documentation (2024)
+
+Streamlit Docs (2025)
+
+## 👨‍💻 Author
+**Prithviraj More**  
+📧 [GitHub Profile](https://github.com/Prithxvhie44)  
+💬 “Turning customer opinions into real data-driven insights.”
+
+## 🧾 License
+This project is licensed under the [MIT License](LICENSE).
 
