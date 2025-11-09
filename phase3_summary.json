@@ -1,0 +1,53 @@
+{
+  "total_reviews": 2115,
+  "sentiment_distribution": {
+    "Positive": 1873,
+    "Neutral": 176,
+    "Negative": 66
+  },
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "representative_review": "ok nice feel like kg low weight gripping good ok",
+      "sentiment": "Positive"
+    },
+    {
+      "cluster_id": 1,
+      "representative_review": "good",
+      "sentiment": "Positive"
+    },
+    {
+      "cluster_id": 2,
+      "representative_review": "superb excellent product",
+      "sentiment": "Positive"
+    },
+    {
+      "cluster_id": 3,
+      "representative_review": "good product",
+      "sentiment": "Positive"
+    },
+    {
+      "cluster_id": 4,
+      "representative_review": "sand filled plastic job good",
+      "sentiment": "Positive"
+    }
+  ],
+  "qa_pairs": [
+    {
+      "question": "Q: How do customers feel about grip?",
+      "answer": "Most users (88.9%) mention positive feedback about grip."
+    },
+    {
+      "question": "Q: How do customers feel about weight balance?",
+      "answer": "Most users (83.3%) mention positive feedback about weight balance."
+    },
+    {
+      "question": "Q: How do customers feel about price?",
+      "answer": "Most users (88.9%) mention positive feedback about price."
+    },
+    {
+      "question": "Q: How do customers feel about packaging?",
+      "answer": "Most users (100.0%) mention positive feedback about packaging."
+    }
+  ]
+}
