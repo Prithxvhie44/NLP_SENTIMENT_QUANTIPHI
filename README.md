@@ -88,6 +88,7 @@ streamlit run app/app.py
 ---
 ```
 
+🧠 Workflow Overview
 
 | Step                | Description                                         | Output                  |
 | ------------------- | --------------------------------------------------- | ----------------------- |
@@ -97,3 +98,56 @@ streamlit run app/app.py
 | **Q&A Generation**  | Creates automatic Q&A pairs from insights           | `phase3_qa.csv`         |
 | **Dashboard**       | Interactive visualization & question answering      | Web App                 |
 
+
+📊 Dashboard Features
+
+| Feature                            | Description                                             |
+| ---------------------------------- | ------------------------------------------------------- |
+| 🗂️ **Metrics Overview**           | Total reviews, average rating, sentiment ratio          |
+| 🥧 **Sentiment Donut Chart**       | Distribution of Positive / Neutral / Negative reviews   |
+| 📈 **Keyword Charts**              | Top keywords for positive & negative sentiments         |
+| ☁️ **Word Cloud**                  | Visual representation of most frequent terms            |
+| 🧩 **t-SNE Clusters**              | 2D visualization of semantic similarity between reviews |
+| 📉 **Negative Feedback Extractor** | Displays top negative or mixed reviews                  |
+| 💬 **Q&A Query Input**             | Users can ask: “What do customers say about price?”     |
+
+🧾 Key Results
+
+Metric	Observation
+Total Reviews	380
+Average Rating	4.2 / 5
+Positive Sentiment	~85%
+Neutral Sentiment	~10%
+Negative Sentiment	~5%
+Top Positive Keywords	grip, comfort, quality, packaging
+Top Negative Keywords	rubber, sound, price, filling
+
+🧩 Negative Feedback Highlights
+
+“Rubber started peeling after a few days.”
+
+“Gap inside one dumbbell makes rattling sound.”
+
+“Price is slightly higher than expected.”
+
+🧮 Visualizations
+
+Sentiment Distribution Donut Chart
+
+Top Positive & Negative Keywords (Bar Chart)
+
+Word Cloud by Sentiment
+
+t-SNE Semantic Clusters
+
+Auto-generated Review Summaries
+
+📸 Dashboard Preview
+Section	Screenshot
+Dashboard Overview	
+
+Sentiment Donut Chart	
+
+Word Cloud	
+
+Cluster Visualization	
