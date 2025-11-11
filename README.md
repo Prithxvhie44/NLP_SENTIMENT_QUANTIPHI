@@ -18,8 +18,10 @@ It aims to extract **sentiment**, detect **key product features**, and generate 
 - Generate **Q&A summaries** automatically  
 - Present results in an **interactive dashboard**
 
----
+<details>
+<summary><strong>Click to expand/collapse project structure 📂</strong></summary>
 
+```markdown
 NLP_SENTIMENT_QUANTIPHI/
 │
 ├── **app/**
@@ -61,8 +63,6 @@ NLP_SENTIMENT_QUANTIPHI/
 ├── `README.md` — Project overview (this file)
 ├── `LICENSE` — MIT License
 └── `.gitignore` — Ignore cache and checkpoint files
-
-
 
 
 ```bash
