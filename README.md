@@ -100,11 +100,7 @@ Perform POS tagging, TF-IDF, Word2Vec, Sentiment (VADER), and LSA topic modeling
 python scripts/phase2_analysis.py
 Input: data/processed/processed_reviews.csv
 Output: data/processed/phase2_output.csv
-Also generates:
 
-models/word2vec.model
-
-models/tfidf_vectorizer.joblib
 
 Step 3 — Review Summarization & Q&A Generation
 
@@ -134,7 +130,7 @@ Q&A pairs → phase3_qa.csv
 
 To execute all steps at once, create and run a pipeline script:
 
-python scripts/run_pipeline.py
+python scripts/run_pipeline.py(In progress...)
 
 Include a workflow table:
 
