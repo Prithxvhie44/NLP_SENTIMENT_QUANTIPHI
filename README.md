@@ -20,55 +20,49 @@ It aims to extract **sentiment**, detect **key product features**, and generate 
 
 ---
 
-## 🧱 Repository Structure
 NLP_SENTIMENT_QUANTIPHI/
 │
-├── app/
-│ └── app.py # Streamlit interactive dashboard
+├── **app/**
+│   └── `app.py` — Streamlit interactive dashboard
 │
-├── data/
-│ ├── raw/ # Raw scraped Flipkart data
-│ ├── processed/ # Cleaned and analyzed files
-│ │ ├── processed_reviews.json
-│ │ ├── phase2_output.csv
-│ │ ├── sentiment_reviews.json
-│ │ ├── topics.json
-│ │ └── summary.json
+├── **data/**
+│   ├── **raw/** — Raw scraped Flipkart data
+│   ├── **processed/** — Cleaned and analyzed files
+│   │   ├── `processed_reviews.json`
+│   │   ├── `phase2_output.csv`
+│   │   ├── `sentiment_reviews.json`
+│   │   ├── `topics.json`
+│   │   └── `summary.json`
 │
-├── scripts/
-│ ├── conversion.py # JSON → CSV converter
-│ ├── flipkart_scraper.py # BeautifulSoup scraper
-│ ├── phase2_analysis.py # POS, TF-IDF, Sentiment, Topic Modeling
-│ └── phase3_summary_qa.py # Summarization & Q&A generator
+├── **scripts/**
+│   ├── `conversion.py` — JSON → CSV converter
+│   ├── `flipkart_scraper.py` — BeautifulSoup scraper
+│   ├── `phase2_analysis.py` — POS, TF-IDF, Sentiment, Topic Modeling
+│   └── `phase3_summary_qa.py` — Summarization & Q&A generator
 │
-├── models/
-│ ├── word2vec.model # Trained Word2Vec model
-│ ├── tfidf_vectorizer.joblib # TF-IDF vectorizer
-│ └── lstm_sentiment_model.h5 # Optional sentiment classifier
+├── **models/**
+│   ├── `word2vec.model` — Trained Word2Vec embeddings
+│   ├── `tfidf_vectorizer.joblib` — TF-IDF vectorizer
+│   └── `lstm_sentiment_model.h5` — Optional LSTM sentiment model
 │
-├── reports/
-│ ├── Quantiphi_Project_Report.md # Final Markdown report
-│ ├── Quantiphi_Project_Report.pdf # PDF version
-│ └── visuals/ # Images for documentation
-│ ├── sentiment_donut.png
-│ ├── cluster_tsne.png
-│ ├── wordcloud_positive.png
-│ └── dashboard_screenshot.png
+├── **reports/**
+│   ├── `Quantiphi_Project_Report.md` — Final markdown report
+│   ├── `Quantiphi_Project_Report.pdf` — Final PDF version
+│   └── **visuals/** — Images for documentation
+│       ├── `sentiment_donut.png`
+│       ├── `cluster_tsne.png`
+│       ├── `wordcloud_positive.png`
+│       └── `dashboard_screenshot.png`
 │
-├── .streamlit/
-│ └── config.toml # Dark teal dashboard theme
+├── **.streamlit/**
+│   └── `config.toml` — Custom dark teal dashboard theme
 │
-├── requirements.txt # All dependencies
-├── README.md # (This file)
-├── LICENSE # MIT License
-└── .gitignore # Ignored cache/checkpoints
+├── `requirements.txt` — All dependencies
+├── `README.md` — Project overview (this file)
+├── `LICENSE` — MIT License
+└── `.gitignore` — Ignore cache and checkpoint files
 
 
-
-
----
-
-## ⚙️ Installation & Setup
 
 
 ```bash
