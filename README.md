@@ -234,7 +234,7 @@ Streamlit Docs (2025)
 ## 👨‍💻 Author
 **Prithviraj More**  
 📧 [GitHub Profile](https://github.com/Prithxvhie44)  
-💬 “Turning customer opinions into real data-driven insights.”
+
 
 ## 🧾 License
 This project is licensed under the [MIT License](LICENSE).
